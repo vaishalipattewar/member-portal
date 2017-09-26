@@ -1,0 +1,36 @@
+<html>
+<body>
+
+<center><h2>Registration Form</h2></center>
+<form id="form1" name="form1" action="/memberportal/Registration.php" method="post">
+<table align="center" cellspacing="10" columnspan="2">
+    <tr><td>Name<span style="color:#FB0933">*</span>: </td>
+    <td><input type="text" name="name" id="name" size="20" pattern="[A-Za-z\.\s]{2,}" maxlength="100" placeholder="Enter Name" title="Name should contain alphabets"required/></td></tr>
+
+    <tr><td>E-mail<span style="color:#FB0933">*</span>:</td> 
+    <td><input type="email" name="email" id="email" size="20" maxlength="100" placeholder="Enter Email" required/></td></tr>
+    
+    <tr><td>Contact No<span style="color:#FB0933">*</span>:</td> 
+    <td><input type="number" name="contactNo" id="mobileNo" pattern="^(?:(?:\+|0{0,2})91(\s*[\-]\s*)?|[0]?)?[789]\d{9}$" maxlength="10" minlength="10" placeholder="Enter Mobile number" title="Please enter the mobile number which starts with 9,8 or 7 and it should contain 10 digits" required></td></tr>
+
+<tr><td>Profession<span style="color:#FB0933">*</span>:</td> 
+    <td><input type="text" name="profession" id="profession" size="20" pattern="[A-Za-z\.\s]{2,}" placeholder="Enter profession" title="Please Enter proper profession" required></td></tr>
+
+<tr><td>Location<span style="color:#FB0933">*</span>:</td> 
+    <td><input type="text" name="location" id="location" size="20" pattern="[A-Za-z\.\s]{2,}" placeholder="Enter location" title="Please enter proper location which should contain alphabets" required></td></tr>
+
+<tr><td>User Id<span style="color:#FB0933">*</span>:</td> 
+    <td><input type="text" name="username" id="username" size="20" pattern="[A-Za-z\.\s]{2,}" placeholder="Enter User Id" title="User Id should contain alphabets" required></td></tr>
+
+<tr><td>Password<span style="color:#FB0933">*</span>:</td> 
+    <td><input type="password" name="password" id="password" size="20" placeholder="Enter password" required></td></tr>
+
+    <tr><td><center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="submit" name="submit" value="submit" onclick="window.location.href='/memberportal/index.php'"></center></td></tr>
+    <tr><td><center>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	If already a member? <a href="/memberportal/index.php">Log In</a></center></td></tr>
+</table>
+    </form>
+<p><center><strong>&copy allrights reserved</strong></center></p>
+</body>
+</html>
