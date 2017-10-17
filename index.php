@@ -11,9 +11,8 @@ header("location: profile.php");
 <title>Login Form</title>
 <link href="style.css" rel="stylesheet" type="text/css">
 </head>
-<body>
+<body background="background3.jpg">
 <div id="main">
-<h1>PHP Login Session Example</h1>
 <div id="login">
 <h2>Login Form</h2>
 <form action="" method="post">

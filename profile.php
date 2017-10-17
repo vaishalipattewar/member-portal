@@ -21,7 +21,6 @@ include('session.php');
 <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-
 <div id="profile">
 <b id="welcome">Welcome : <i><?php echo $login_session; ?></i></b>
 <b id="dashboard"><span id="tab"><a href="dashboard.php">Dashboard</a></span></b>
@@ -35,7 +34,6 @@ $sql = "select location from registration where username='$login_session'";
 $result = $con->query($sql);
 $row = $result->fetch_assoc();
 $address=$row["location"];
-echo $address;
 
   $Address = urlencode($address);
   $request_url = "http://maps.googleapis.com/maps/api/geocode/xml?address=".$Address."&sensor=true";

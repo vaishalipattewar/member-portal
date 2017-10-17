@@ -6,30 +6,29 @@ include('session.php');
 <head>
 <style type="text/css">
 #map{ 
-width:700px; 
+width:900px; 
 height: 500px;
 float: left; 
+border:1px black;
 }
 #div3
 {
-border:1px solid #FFFFFF;
- width:300px;
-height:500px;
-
+ width:200px;
+height:400px;
 padding:50px;
-float: right;
-background:#FFFFFF;
+float: left;
 margin-left:0px;
 margin-right:0px;
 margin-top:0px;
 margin-bottom:0px;
 }
+
         </style>
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
 <title>Your Home Page</title>
 <link href="style.css" rel="stylesheet" type="text/css">
 </head>
-<body>
+<body background="background3.jpg">
 <div id="profile">
 <b id="welcome">Welcome : <i><?php echo $login_session; ?></i></b>
 <b id="dashboard"><span id="tab"><a href="dashboard.php">Dashboard</a></span></b>
@@ -93,9 +92,11 @@ function initMap() {
 function markerLocation(){
     //Get location.
     var currentLocation = marker.getPosition();
+    
     //Add lat and lng values to a field that we can save.
     document.getElementById('lat').value = currentLocation.lat(); //latitude
     document.getElementById('lng').value = currentLocation.lng(); //longitude
+	
 }     
         
 //Load the map when the page has finished loading.

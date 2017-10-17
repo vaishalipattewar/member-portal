@@ -7,7 +7,7 @@ include('session.php');
 <title>Your Home Page</title>
 <link href="style.css" rel="stylesheet" type="text/css">
 </head>
-<body>
+<body background="background3.jpg">
 <div id="profile">
 <b id="welcome">Welcome : <i><?php echo $login_session; ?></i></b>
 <b id="dashboard"><span id="tab"><a href="#">Dashboard</a></span></b>

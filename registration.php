@@ -23,10 +23,13 @@ if(! $result )
   die('Could not enter data: ' . mysql_error());
 }
 
-<a href="/memberportal/index.php">
 echo "Registered Succuessfully\n";
 
 mysql_close($conn);
 }
 
+?>
+<?php
+   header("Location: index.php");
+   exit;
 ?>
